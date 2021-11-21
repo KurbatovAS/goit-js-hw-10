@@ -19,14 +19,30 @@ body {
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+  border-radius: 5px;
+  border-color: cadetblue;
 }
 
 ul {
   list-style: none;
 }
 
+.country-list {
+  width: 95vw;
+}
+
 .country-list__item {
+  display: flex;
+  align-content: center;
   font-size: 28px;
+}
+
+.country-list__item:not(:last-of-type) {
+margin-bottom: 10px;
+}
+
+.country-list__item:nth-child(even) {
+  background-color: #eaf8ffe5;  
 }
 
 .country-list__img {
@@ -35,6 +51,7 @@ ul {
 }
 
 .country-list__name {
+  margin-left: 8px;
   font-weight: 700;
 }
 
@@ -44,4 +61,8 @@ ul {
 
 .country-info__span {
   font-weight: 700;
+}
+
+.country-info__text {
+  display: inline;
 }
